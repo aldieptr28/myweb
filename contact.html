@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Kontak</title>
+    <style>
+        body {
+            max-width: 800px;
+            background-color: black;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .inputan {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid white;
+        }
+
+        .inputan label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .inputan input,
+        .inputan textarea {
+            width: 97%;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #333;
+            color: white;
+        }
+
+        .inputan input[type="submit"] {
+            background-color: darkslategrey;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inputan">
+        <h2>Formulir Kontak</h2>
+        <form action="kelola.php" method="post">
+            <label for="nama">Nama</label>
+            <input type="text" name="nama" id="nama" placeholder="Masukkan nama Anda" required>
+
+            <label for="alamat">Alamat</label>
+            <input type="text" name="alamat" id="alamat" placeholder="Masukkan alamat Anda" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Masukkan alamat email Anda" required>
+
+            <label for="pesan">Pesan</label>
+            <textarea name="pesan" id="pesan" cols="50" rows="6" placeholder="Tulis pesan Anda" required></textarea>
+
+            <input type="submit" value="Kirim Pesan">
+        </form>
+    </div>
+</body>
+
+</html>
